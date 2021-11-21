@@ -1,0 +1,104 @@
+/* ============== Font Import =============== */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*========== Colors ==========*/
+  /* primary */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  /* Neutral(BG) */
+  --body-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  /*========== Font and typography ==========*/
+  --body-font: font-family: 'Outfit', sans-serif;;
+  --big-font-size: 2.5rem;
+  --h1-font-size: 1.5rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --smallest-font-size: 0.82rem;
+
+  /*========== Font weight ==========*/
+  --font-soft: 300;
+  --font-medium: 400;
+  --font-bold: 600;
+
+  /*========== Margenes Bottom ==========*/
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+body,
+button {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  position: relative;
+  background-color: var(--body-bg);
+  transition: 0.4s;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 968px;
+  margin-left: var(--mb-1);
+  margin-right: var(--mb-1);
+}
+
+.container__mini {
+  max-width: 968px;
+  margin-left: var(--mb-0-5);
+  margin-right: var(--mb-0-5);
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
